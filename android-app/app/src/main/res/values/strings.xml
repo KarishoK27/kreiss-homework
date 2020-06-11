@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="message">Message</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="device_header">Device</string>
+
+    <!-- Messages Preferences -->
+    <string name="server_ip">Server IP Address</string>
+    <string name="server_port">Server Port</string>
+
+    <!-- Device Preferences -->
+    <string name="device_name">Device Name</string>
+    <string name="device_id">Device ID</string>
+
+</resources>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New message</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+
+        {% if error_message %}<p id="error_message"><strong>{{ error_message }}</strong></p>{% endif %}
+
+        <h1>New message</h1>
+        <form action="{% url 'send' %}" method="post">
+            {% csrf_token %}
+            <input type="text" id="message" name="message"></br>
+            <input type="submit" value="Send">
+        </form>
+
+    </div>
+
+    <script>
+        setTimeout(function () {
+            if (document.getElementById('error_message')) {
+                document.getElementById('error_message').style.display = 'none';
+            }
+        }, 5000);
+    </script>
+</body>
+
+</html>

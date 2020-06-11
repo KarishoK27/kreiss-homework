@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="server_ip"
+            app:title="@string/server_ip"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="server_port"
+            app:title="@string/server_port"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/device_header">
+
+        <EditTextPreference
+            app:key="device_name"
+            app:title="@string/device_name"
+            app:useSimpleSummaryProvider="true"
+            android:enabled="false"/>
+
+        <EditTextPreference
+            app:key="device_id"
+            app:title="@string/device_id"
+            app:useSimpleSummaryProvider="true"
+            android:enabled="false"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
